@@ -1,6 +1,6 @@
 from .interfaces import MessageSender, MessageReceiver, MessageStorage
-from .models import Message, MessageStatus, Contact, Conversation
-from .whatsapp_service import WhatsAppService
+from .models import Message, MessageStatus, MessageType, Contact, Conversation
+from .whatsapp_service_v2 import WhatsAppService
 
 __all__ = [
     "MessageSender",
@@ -8,6 +8,7 @@ __all__ = [
     "MessageStorage",
     "Message",
     "MessageStatus",
+    "MessageType",
     "Contact",
     "Conversation",
     "WhatsAppService",
